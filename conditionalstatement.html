@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CONDITIONAL STATEMENTS</h1>
+    <button type="button" onclick="myfun()">Click Me!</button>
+    <p id="time">
+    </p>
+    <p id="greeting"></p>
+    <script>
+        function myfun()
+        {
+        var time=new Date().getHours();
+        var greeting;
+        if (time<12){
+            greeting="Good Morning";
+        }
+        else if (time<16){
+            greeting="Good Afternoon";
+        }
+        else{
+        greeting="Good night"
+        }
+        document.getElementById("time").innerHTML="The time is: "+time;
+        document.getElementById("greeting").innerHTML=greeting;
+    }
+    </script>
+</body>
+</html>
